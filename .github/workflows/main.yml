@@ -7,7 +7,5 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name : pwd
-        run : ls > ls.txt
-      - name : test
-        run : cat ls.txt
+      - name : ls
+        run : ls
