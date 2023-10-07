@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Deploy & Build React
         uses: appleboy/ssh-action@master
@@ -16,4 +16,4 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           script: |
             cd ./develop
-            cd > test7.txt
+            cd > test8.txt
