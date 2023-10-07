@@ -15,4 +15,4 @@ jobs:
           port: ${{ secrets.REMOTE_SSH_PORT }}
           script: |
             cd "$env:USERPROFILE\Desktop"
-            Add-Content -Path "test.txt" -Value "hello"
+            Add-Content -Path "test.txt" -Value "helloo"
