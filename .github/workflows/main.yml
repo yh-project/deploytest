@@ -15,5 +15,5 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            cd develop
+            cd develop/deploytest
             dir > plz.txt
