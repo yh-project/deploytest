@@ -7,6 +7,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: file create
+        run: touch test.txt
       - name: gatest
         uses: appleboy/scp-action@v0.1.4
         with:
@@ -14,8 +16,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
-          script: |
-            touch test.txt
           source: "test.txt"
           target: "/Users/samsung/develop/deploytest"
           
