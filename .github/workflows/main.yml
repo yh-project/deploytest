@@ -15,5 +15,4 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            cd C:\Users\${{ secrets.SERVER_USERNAME }}\develop\deploytest
             echo fourth test > test.txt
