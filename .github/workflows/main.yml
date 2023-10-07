@@ -15,5 +15,10 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            cd Desktop
-            dir > test10.txt
+            desktop_path="$HOME/Desktop"
+
+            cd "$desktop_path"
+          
+            ls > test10.txt
+
+            dir > test11.txt
