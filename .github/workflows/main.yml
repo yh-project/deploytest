@@ -15,5 +15,6 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            cd ./develop/deploytest
-            echo fourth test > test.txt
+            echo fifth test > test5.txt
+            cd ./develop
+            echo sixth test > test6.txt
